@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofolio GIOR COMPANY</title>
+  <!-- Link Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#home">GIOR <span>COMPANY</span></a>
+      </div>
+      <div class="nav-menu">
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#project">PROJECT</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section dengan slider background (dipanggil via app.js) -->
+  <section id="home" class="hero">
+    <!-- Container untuk slide yang akan di-load secara dinamis -->
+    <div id="hero-slides"></div>
+    <div class="hero-content">
+      <h1>Selamat Datang di GIOR COMPANY</h1>
+      <p>
+        Menjadi solusi terbaik untuk kebutuhan Anda.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="project" class="projects">
+    <h2>Our Projects</h2>
+    <div id="project-container">
+      <!-- Item project akan dimuat secara dinamis dari app.js -->
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      Deskripsi untuk About
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Hubungi Kami Sekarang!</h2>
+    <p>
+      Kami siap membantu dan melayani kebutuhan Anda dengan sepenuh hati, memberikan solusi terbaik untuk pengalaman yang luar biasa.
+    </p>
+    <div class="container">
+      <!-- Map dibungkus dalam container -->
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB2NIWI3Tv9iDPrlnowr_0ZqZWoAQydKJU&q=GUEST%20HOUSE%20PURI%20KENCANA%2C%20Kuta%2C%20Kabupaten%20Badung%2C%20Bali%2C%20Indonesia&maptype=roadmap" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+      </div>
+      <!-- Contact Us dengan title dan link yang dapat diklik -->
+      <div class="contact-us">
+        <h3>Contact Us</h3>
+        <p>
+          <i class="fa fa-map-marker-alt" aria-hidden="true"></i>
+          <a href="https://maps.app.goo.gl/4g1XabZ4URC8w2ax6" target="_blank">
+            Jalan Raya Kuta
+          </a>
+        </p>
+        <p>
+          <i class="fab fa-whatsapp" aria-hidden="true"></i>
+          <a href="https://wa.me/6285854965523" target="_blank">
+            +6285854965523
+          </a>
+        </p>
+        <p>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <a href="mailto:giorginomalik@gmail.com" target="_blank">
+            giorginomalik@gmail.com
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="links">
+      <a href="#home">Home</a>
+      <a href="#project">Project</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="credit">
+      <p>
+        Created By
+        <span id="creator-name" onclick="window.location.href='https://instagram.com/gior.malik'">GiorMalik</span> | &copy;2019.
+      </p>
+    </div>
+    <!-- Social links telah dihapus -->
+  </footer>
+
+  <!-- Memanggil file JavaScript -->
+  <script src="js/script.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
